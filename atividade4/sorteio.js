@@ -1,9 +1,9 @@
-const readline = require('readline');
+const readline = require('readline');//biblioteca de leitura
 
 // Interface para leitura de linha
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+    input: process.stdin,//entrado usuario
+    output: process.stdout//saida usuario
 });
 
 // Função para gerar um número aleatório entre 1 e 70
@@ -16,7 +16,7 @@ const randomNumber = generateRandomNumber();
 
 // Função principal
 function main() {
-    rl.question('Tente adivinhar o número entre 1 e 70: ', (guess) => {
+    rl.question('Tente adivinhar o número entre 1 e 70: ', (guess) => {//guess parametro
         const userGuess = parseInt(guess);
         
         // Verifica se o palpite do usuário está correto

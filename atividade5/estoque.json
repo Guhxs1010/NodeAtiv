@@ -1,6 +1,10 @@
 [
   {
     "nome": "maça",
-    "quantidade": 3
+    "quantidade": 10
+  },
+  {
+    "nome": "maça",
+    "quantidade": 5
   }
 ]

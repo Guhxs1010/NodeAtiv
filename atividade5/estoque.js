@@ -1,10 +1,10 @@
-const readline = require('readline');
-const fs = require('fs');
+const readline = require('readline');//biblioteca de leitura
+const fs = require('fs');//biblioteca de arquivos
 
 // Interface para leitura de linha
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+    input: process.stdin,//entrada usuario
+    output: process.stdout//saida usuario
 });
 
 // Nome do arquivo de estoque
@@ -22,9 +22,9 @@ function carregarEstoque() {
 }
 
 // Função para salvar o estoque no arquivo JSON
-function salvarEstoque(estoque) {
+function salvarEstoque(estoque) {//parametro estoque 
     try {
-        const data = JSON.stringify(estoque, null, 2);
+        const data = JSON.stringify(estoque, null, 2);//transforma em string json
         fs.writeFileSync(estoqueFile, data);
     } catch (err) {
         console.error('Erro ao salvar o estoque:', err);
